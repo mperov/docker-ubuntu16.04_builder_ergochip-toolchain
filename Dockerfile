@@ -1,6 +1,10 @@
 # base image
 FROM ubuntu:16.04
 
+# add file to image
+ADD root/.gitconfig /root/.gitconfig
+ADD root/install-systemc /root/install-systemc
+
 # installing
 RUN \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
