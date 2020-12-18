@@ -15,7 +15,8 @@ RUN \
   apt-get install -y gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev cmake && \
   apt-get install -y libpixman-1-dev libmpc3 libc6 lib32stdc++-4.8-dev libfdt-dev libglib2.0-dev libfdt-dev libusb-1.0-0-dev && \
   apt-get install -y sudo git htop man vim wget && \
-  rm -rf /var/lib/apt/lists/*
+  rm -rf /var/lib/apt/lists/* && \
+  /root/install-systemc
 
 # environment variables
 ENV HOME /root
