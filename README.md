@@ -4,7 +4,7 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 
 ### Base Docker Image
 
-* [ubuntu:16.04](https://registry.hub.docker.com/u/library/ubuntu/)
+* [ubuntu:16.04](https://hub.docker.com/_/ubuntu)
 
 ### Installation
 
