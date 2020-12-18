@@ -14,8 +14,8 @@ mkdir build
 cd build
 export CXX=g++
 ../configure CXXFLAGS=-std=c++11 --prefix=/opt/systemc --with-unix-layout --enable-pthreads -q 
-make &> /dev/null
-sudo make install &> /dev/null
+make
+sudo make install
 
 # cleaning
 cd ../../
