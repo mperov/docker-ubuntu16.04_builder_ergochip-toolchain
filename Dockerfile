@@ -16,6 +16,7 @@ RUN \
   apt-get install -y libpixman-1-dev libmpc3 libc6 lib32stdc++-4.8-dev libfdt-dev libglib2.0-dev libfdt-dev libusb-1.0-0-dev && \
   apt-get install -y sudo git htop man vim wget && \
   rm -rf /var/lib/apt/lists/* && \
+  chmod +x /root/install-systemc && \
   /root/install-systemc
 
 # environment variables
