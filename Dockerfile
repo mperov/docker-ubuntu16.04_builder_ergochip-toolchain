@@ -30,8 +30,8 @@ RUN \
   make -j`nproc` && \
   cd /root/wasserfall-toolchain/installer/ && \
   ./builder.sh /root/wasserfall-toolchain/ /opt/wasserfall-riscv/ && \
-  cp /root/wasserfall-toolchain/installer/risc-v_toolchain_installer.sh /root/ && \
-  cp /root/wasserfall-toolchain/installer/risc-v_toolchain_uninstaller.sh /root/
+  mv /root/wasserfall-toolchain/installer/risc-v_toolchain_installer.sh /root/ && \
+  mv /root/wasserfall-toolchain/installer/risc-v_toolchain_uninstaller.sh /root/
 
 # environment variables
 ENV HOME /root
