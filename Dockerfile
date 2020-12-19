@@ -24,7 +24,7 @@ RUN \
   chmod +x /root/install-systemc && \
   /root/install-systemc && \
   git clone --recursive https://$GitLabLogin:$GitLabPassword@pass.mipt.ru:2443/coder/wasserfall-toolchain.git /root/wasserfall-toolchain && \
-  cd wasserfall-toolchain/ && git checkout ergochip && \
+  cd /root/wasserfall-toolchain/ && git checkout ergochip && \
   git submodule update --init --recursive && \
   ./configure --prefix=/opt/wasserfall-riscv --enable-multilib --with-arch=rv64imac --with-abi=lp64 && \
   make -j`nproc`
