@@ -27,7 +27,11 @@ RUN \
   cd /root/wasserfall-toolchain/ && git checkout ergochip && \
   git submodule update --init --recursive && \
   ./configure --prefix=/opt/wasserfall-riscv --enable-multilib --with-arch=rv64imac --with-abi=lp64 && \
-  make -j`nproc`
+  make -j`nproc` && \
+  cd /root/wasserfall-toolchain/installer/ && \
+  ./builder.sh /root/wasserfall-toolchain/ /opt/wasserfall-riscv/ && \
+  cp /root/wasserfall-toolchain/installer/risc-v_toolchain_installer.sh /root/ && \
+  cp /root/wasserfall-toolchain/installer/risc-v_toolchain_uninstaller.sh /root/
 
 # environment variables
 ENV HOME /root
