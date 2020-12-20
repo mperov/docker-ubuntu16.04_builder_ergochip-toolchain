@@ -26,7 +26,7 @@ docker cp `docker create ubuntu16.04_builder_ergochip-toolchain`:/root/risc-v_to
 
 For trying toolchain or rebuilding it you may run container:
     
-    `docker run -it --rm mperov/ubuntu16.04_builder_ergochip-toolchain`
+    docker run -it --rm mperov/ubuntu16.04_builder_ergochip-toolchain
     
 ### Troubleshooting
 
