@@ -1,5 +1,11 @@
 ## Ubuntu 16.04 Dockerfile
 
+<p align="left">
+    <a href="https://github.com/mperov/docker-ubuntu16.04_builder_ergochip-toolchain/graphs/contributors" alt="Contributors">
+        <img alt="Contributors" src="https://img.shields.io/github/contributors/mperov/docker-ubuntu16.04_builder_ergochip-toolchain?label=Contributors">
+    </a>
+</p>
+
 This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for creating container which can simplify building of gcc-newlib toolchain for Ergochip processor.
 
 ### Base Docker Image
