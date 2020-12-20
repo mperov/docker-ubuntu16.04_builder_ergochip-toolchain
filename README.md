@@ -17,7 +17,16 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 
 ### Usage
 
-    docker run -it --rm mperov/ubuntu16.04_builder_ergochip-toolchain
+To get installer and uninstaller:
+
+```console
+docker cp `docker create ubuntu16.04_builder_ergochip-toolchain`:/root/risc-v_toolchain_installer.sh .
+docker cp `docker create ubuntu16.04_builder_ergochip-toolchain`:/root/risc-v_toolchain_uninstaller.sh .
+```
+
+For trying toolchain or rebuilding it you may run container:
+    
+    `docker run -it --rm mperov/ubuntu16.04_builder_ergochip-toolchain`
     
 ### Troubleshooting
 
