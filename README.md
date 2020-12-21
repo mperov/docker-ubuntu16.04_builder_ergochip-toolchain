@@ -36,7 +36,7 @@ For trying toolchain or rebuilding it you may run container:
     
 ### Troubleshooting
 
-If your GitLab password contains special symbols, e.g. @, you may use hex code instead of special symbol. For example, special symbol @ is 0x40 in hex code.
+If your GitLab login and/or password contains special symbols, e.g. @, you may use hex code instead of special symbol. For example, special symbol @ is 0x40 in hex code.
 
 So, in your password use %40 instead of @ - `GitLabPassword='p%40ssword'` instead of `GitLabPassword='p@ssword'`
 
